@@ -1,0 +1,30 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: auth
+  jpa:
+    database: postgresql
+    # Auto generate SQL schemas
+    generate-ddl: true
+    # DEBUG - Log SQL when DB be used
+    show-sql: false
+    properties:
+      javax:
+        persistence:
+          create-database-schemas: true
+      hibernate:
+        ddl-auto: update
+        default_schema: public
+  datasource:
+    url: ${VEXILLUM_DB_URL}
+    username: ${VEXILLUM_DB_USER}
+    password: ${VEXILLUM_DB_PASSWORD}
+  sql:
+    init:
+      platform: postgres
+vexillum:
+  security:
+    jwt:
+      expiration: 'P30D'
+      secret: "Hello there"

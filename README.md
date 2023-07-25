@@ -1,2 +1,2 @@
-# vex
-Account management and authentication
+# vexillum
+Vexillum 

@@ -1,0 +1,16 @@
+spring:
+  output:
+    ansi:
+      enabled: always
+      # Show colors in output console
+  jpa:
+    # Auto generate SQL schemas
+    generate-ddl: true
+    # DEBUG - Log SQL when DB be used
+    show-sql: true
+    properties:
+      javax:
+        persistence:
+          create-database-schemas: true
+      hibernate:
+        ddl-auto: update

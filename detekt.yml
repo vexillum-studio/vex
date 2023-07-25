@@ -1,0 +1,43 @@
+build:
+    maxIssues: 10
+
+exceptions:
+    SwallowedException:
+        active: false
+    TooGenericExceptionCaught:
+        active: false
+
+formatting:
+    Indentation:
+        active: true
+    ImportOrdering:
+        active: true
+    NoWildcardImports:
+        active: false
+    MultiLineIfElse:
+        active: false
+    MaximumLineLength:
+        maxLineLength: 150
+        ignoreBackTickedIdentifier: true
+
+complexity:
+    NestedBlockDepth:
+        threshold: 5
+
+style:
+    MaxLineLength:
+        maxLineLength: 150
+    WildcardImport:
+        active: true
+        excludeImports:
+            - com.vexillum.*
+    LoopWithTooManyJumpStatements:
+        maxJumpCount: 3
+    ReturnCount:
+        max: 5
+    ThrowsCount:
+        active: false
+    MagicNumber:
+        ignoreAnnotation: true
+        ignoreEnums: true
+        ignoreNumbers: ['-1', '0', '1', '2', '100']

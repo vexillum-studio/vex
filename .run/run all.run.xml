@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="run all" type="CompoundRunConfigurationType">
+    <toRun name="vexillum-environment" type="docker-deploy" />
+    <toRun name="accounts" type="JarApplication" />
+    <toRun name="auth" type="JarApplication" />
+    <method v="2" />
+  </configuration>
+</component>
